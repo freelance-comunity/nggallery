@@ -1,0 +1,4 @@
+<ng-image-detail [selectedImage]="selectedImage"></ng-image-detail>
+<div class="container">
+  <ng-image *ngFor="let image of images | async" [image]="image" (click)="onSelect(image)"></ng-image>
+</div>
